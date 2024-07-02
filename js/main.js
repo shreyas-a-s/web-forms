@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 errorMessage.textContent = message;
                 errorContainer.appendChild(errorMessage);
             });
+        } else {
+            event.preventDefault();
+            errorContainer.innerHTML = '<p style="color: green;">Signup successful!</p>';
         }
     });
 });
